@@ -4,3 +4,12 @@ export function addTwoNumbers(num1, num2) {
   }
   return num1 + num2;
 }
+
+export function greaterThan18(arr) {
+  return arr.filter((e) => {
+    if (!e.age) {
+      throw new Error("no age!");
+    }
+    return e.age > 18;
+  });
+}
