@@ -18,4 +18,15 @@ describe("addTwoNumbers", () => {
     // ASSERT
     expect(result).to.equal(expectedOutput);
   });
+  it("should return false if parameters are not numbers", () => {
+    // ASSEMBLE
+    const inputOne = "5";
+    const inputTwo = "10";
+
+    // ACTION
+    const result = addTwoNumbers(inputOne, inputTwo);
+
+    // ASSERT
+    expect(result).to.equal(false);
+  });
 });
